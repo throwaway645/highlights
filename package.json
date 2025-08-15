@@ -1,0 +1,32 @@
+{
+  "name": "highlights",
+  "version": "1.0.0",
+  "description": "![Screenshot of the website](assets/images/screenshot.png?raw=true)",
+  "main": ".eleventy.js",
+  "scripts": {
+    "sass": "npx sass --style=compressed assets/_sass/style.scss assets/css/style.css",
+    "watch:sass": "npm run sass -- --watch",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "start": "npm-run-all sass --parallel watch:*",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melanierichards/highlights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melanierichards/highlights/issues"
+  },
+  "homepage": "https://github.com/melanierichards/highlights#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-plugin-svg-contents": "^0.7.0",
+    "js-yaml": "^3.14.0",
+    "netlify-plugin-html-validate": "^1.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.4"
+  }
+}
